@@ -49,7 +49,7 @@ answerButton.style.backgroundColor='#e52c45';
 
     document.getElementById('nextButton').addEventListener('click', () => {
       if(currentQuestionIndex>=data.length-1) {
-        alert(poin+"/30");
+        alert(poin+"/"+data.length);
       }else{
         currentQuestionIndex = (currentQuestionIndex + 1);
         showQuestion(currentQuestionIndex);
