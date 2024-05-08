@@ -48,10 +48,11 @@ answerButton.style.backgroundColor='#e52c45';
     }
 
     document.getElementById('nextButton').addEventListener('click', () => {
-      document.getElementById('numQuestion').innerHTML = currentQuestionIndex+"/"+data.length;
+      document.getElementById('numQuestion').innerHTML = currentQuestionIndex+1+"/"+data.length;
       if(currentQuestionIndex>=data.length-1) {
         alert(poin+"/"+data.length);
       }else{
+        document.getElementById('numQuestion').innerHTML = currentQuestionIndex+2+"/"+data.length;
         currentQuestionIndex = (currentQuestionIndex + 1);
         showQuestion(currentQuestionIndex);
       }
