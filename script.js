@@ -46,13 +46,13 @@ answerButton.style.backgroundColor='#e52c45';
         answersContainer.appendChild(answerButton);
       });
     }
-document.getElementById('numQuestion').innerHTML = currentQuestionIndex+1+"/"+data.length;
+
+    document.getElementById('numQuestion').innerHTML = currentQuestionIndex+1+"/"+data.length;
+    
     document.getElementById('nextButton').addEventListener('click', () => {
-      
-      if(currentQuestionIndex>=data.length-1) {
-        alert(poin+"/"+data.length);
+document.getElementById('numQuestion').innerHTML = currentQuestionIndex+2+"/"+data.length;if(currentQuestionIndex>=data.length-1) {
+        alert(poin+"/30");
       }else{
-        document.getElementById('numQuestion').innerHTML = currentQuestionIndex+2+"/"+data.length;
         currentQuestionIndex = (currentQuestionIndex + 1);
         showQuestion(currentQuestionIndex);
       }
