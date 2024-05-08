@@ -46,9 +46,9 @@ answerButton.style.backgroundColor='#e52c45';
         answersContainer.appendChild(answerButton);
       });
     }
-
+document.getElementById('numQuestion').innerHTML = currentQuestionIndex+1+"/"+data.length;
     document.getElementById('nextButton').addEventListener('click', () => {
-      document.getElementById('numQuestion').innerHTML = currentQuestionIndex+1+"/"+data.length;
+      
       if(currentQuestionIndex>=data.length-1) {
         alert(poin+"/"+data.length);
       }else{
